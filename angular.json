@@ -36,6 +36,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/jquery-ui/dist/themes/base/images",
+                "output": "images"
               }
             ],
             "styles": [
