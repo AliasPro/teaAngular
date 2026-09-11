@@ -2,8 +2,6 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Observable, Subscription} from "rxjs";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
-declare var $: any;
-
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -30,20 +28,11 @@ export class MainComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.accordionInit();
-
     this.subscription = this.observable.subscribe((param: boolean) => this.isOpen = param);
   }
 
   ngOnDestroy(): void {
     this.subscription?.unsubscribe();
-  }
-
-  accordionInit(): void {
-    $("#accordion").accordion({
-      heightStyle: 'content',
-      collapsible: true
-    });
   }
 
   closePopup(): void {

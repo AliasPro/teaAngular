@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MainRoutingModule } from './main-routing.module';
 import {MainComponent} from "./main.component";
 import {RouterModule} from "@angular/router";
-
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,9 @@ import {RouterModule} from "@angular/router";
   imports: [
     CommonModule,
     RouterModule,
-    MainRoutingModule
+    MainRoutingModule,
+    NgbAccordionModule
+
   ],
   exports: [
     MainRoutingModule

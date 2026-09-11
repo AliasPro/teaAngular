@@ -18,47 +18,71 @@
     <h2 class="fw-bold text-center mb-5">Ответы на часто задаваемые вопросы</h2>
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <div id="accordion" class="ui-accordion">
-          <h3 class="ui-accordion-header border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
-            Собираете ли вы подарочные боксы?
-          </h3>
-          <div class="ui-accordion-content border-0 text-black pt-0">
-            <p>
-              Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и
-              стоимость!
-            </p>
+        <div ngbAccordion [closeOthers]="true">
+          <div ngbAccordionItem>
+            <h3 ngbAccordionHeader class="border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
+              <button ngbAccordionButton>Собираете ли вы подарочные боксы?</button>
+            </h3>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+                </ng-template>
+              </div>
+            </div>
           </div>
-          <h3 class="ui-accordion-header border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
-            Сколько у вас разновидностей чая?
-          </h3>
-          <div class="ui-accordion-content border-0 text-black pt-0">
-            <p>
-              Наша коллекция большая и постоянно пополняется. У нас Вы найдете чай на любой вкус
-            </p>
+
+          <div ngbAccordionItem>
+            <h3 ngbAccordionHeader class="border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
+              <button ngbAccordionButton>Сколько у вас разновидностей чая?</button>
+            </h3>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  Наша коллекция большая и постоянно пополняется. У нас Вы найдете чай на любой вкус
+                </ng-template>
+              </div>
+            </div>
           </div>
-          <h3 class="ui-accordion-header border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
-            В какой срок осуществляется доставка?
-          </h3>
-          <div class="ui-accordion-content border-0 text-black pt-0">
-            <p>
-              Доставка длится от 2-х до 7-ми дней
-            </p>
+
+          <div ngbAccordionItem>
+            <h3 ngbAccordionHeader class="border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
+              <button ngbAccordionButton>В какой срок осуществляется доставка?</button>
+            </h3>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  Доставка длится от 2-х до 7-ми дней
+                </ng-template>
+              </div>
+            </div>
           </div>
-          <h3 class="ui-accordion-header border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
-            У вас обновляется ассортимент?
-          </h3>
-          <div class="ui-accordion-content border-0 text-black pt-0">
-            <p>
-              Конечно, каждый месяц мы обновляем коллекцию чая
-            </p>
+
+          <div ngbAccordionItem>
+            <h3 ngbAccordionHeader class="border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
+              <button ngbAccordionButton>У вас обновляется ассортимент?</button>
+            </h3>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  Конечно, каждый месяц мы обновляем коллекцию чая
+                </ng-template>
+              </div>
+            </div>
           </div>
-          <h3 class="ui-accordion-header border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
-            Какого объема у вас пачки чая?
-          </h3>
-          <div class="ui-accordion-content border-0 text-black pt-0">
-            <p>
-              У нас можно заказать чай объема 200г - 1000г
-            </p>
+
+          <div ngbAccordionItem>
+            <h3 ngbAccordionHeader class="border-0 rounded p-4 fw-bold bg-primary bg-gradient text-white mb-3">
+              <button ngbAccordionButton>Какого объема у вас пачки чая?</button>
+            </h3>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  У нас можно заказать чай объема 200г - 1000г
+                </ng-template>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>

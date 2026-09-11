@@ -16,14 +16,14 @@ import {ReactiveFormsModule} from "@angular/forms";
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LayoutComponent
-  ],
+    LayoutComponent,
+      ],
   imports: [
     BrowserModule,
     RouterModule,
     SharedModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [
     provideClientHydration(),
