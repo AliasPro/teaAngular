@@ -6,6 +6,8 @@ import {MainComponent} from "./main.component";
 import {RouterModule} from "@angular/router";
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+
 @NgModule({
   declarations: [
     MainComponent
@@ -15,7 +17,6 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
     RouterModule,
     MainRoutingModule,
     NgbAccordionModule
-
   ],
   exports: [
     MainRoutingModule
