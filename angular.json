@@ -46,6 +46,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/teaAngular/",
               "budgets": [
                 {
                   "type": "initial",
