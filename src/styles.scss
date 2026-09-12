@@ -28,3 +28,68 @@ body {
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+.accordion-button::after {
+  display: none !important;
+  background-image: none !important;
+}
+
+[ngbAccordionButton]::after {
+  display: inline-block !important;
+  content: "▼";
+  font-size: 12px;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+  color: currentColor;
+  background-image: none !important;
+}
+
+[ngbAccordionButton][aria-expanded="true"]::after {
+  content: "▲";
+}
+
+[ngbAccordionButton] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+[ngbAccordionButton]:focus,
+[ngbAccordionButton]:not(.collapsed) {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+[ngbAccordionButton]::after {
+  content: "▼";
+  font-size: 12px;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+  color: currentColor;
+}
+
+[ngbAccordionButton][aria-expanded="true"]::after {
+  content: "▲";
+}
+
+[ngbAccordionItem] {
+  border: none !important;
+}
+
+[ngbAccordionHeader] {
+  border: none !important;
+  margin: 0;
+}
+
+[ngbAccordionBody] {
+  padding: 1rem 1.5rem;
+  color: #000;
+}
